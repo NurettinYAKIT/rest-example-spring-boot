@@ -1,9 +1,8 @@
 FROM maven:3.6.3-openjdk-15-slim AS build
-ARG github_token
-ENV GITHUB_TOKEN=$github_token
+
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
-COPY pom.xml .github/settings.xml ./
+COPY pom.xml ./
 RUN mvn -e -B  --settings settings.xml dependency:resolve --no-transfer-progress
 COPY src ./src
 RUN mvn -e -B package --settings settings.xml -Dmaven.test.skip=true --no-transfer-progress
