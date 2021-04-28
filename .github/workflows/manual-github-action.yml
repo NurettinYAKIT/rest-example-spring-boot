@@ -1,13 +1,13 @@
-name: Manual load test
+name: Manual Github Action
 
 on:
   workflow_dispatch:
     inputs:
       env:
-        description: "Environment to run the load test"
+        description: "Environment to run the manual action"
         required: true
       simulation:
-        description: "Simulation name"
+        description: "Action name"
         required: true
 
 jobs:
