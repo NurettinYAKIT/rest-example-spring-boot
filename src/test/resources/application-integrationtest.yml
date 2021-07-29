@@ -1,0 +1,6 @@
+app:
+  gateway:
+    user-service:
+      baseUrl: "http://localhost:8541"
+    authentication-service:
+      baseUrl: http://localhost:8542

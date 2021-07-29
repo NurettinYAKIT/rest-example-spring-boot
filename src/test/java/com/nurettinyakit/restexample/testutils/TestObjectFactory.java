@@ -6,6 +6,9 @@ import com.nurettinyakit.restexample.gateway.userservice.dto.UserResponse;
 import com.nurettinyakit.restexample.gateway.userservice.dto.UsersResponse;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.util.MultiValueMap;
 
 import java.util.List;
 
@@ -53,5 +56,11 @@ public class TestObjectFactory {
         userResponse.setSupport(createSupport());
 
         return userResponse;
+    }
+
+    public static HttpHeaders createHeaders() {
+        final HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        return headers;
     }
 }
