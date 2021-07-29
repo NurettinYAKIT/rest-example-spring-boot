@@ -39,10 +39,6 @@ class SortingTest {
         assertThat(orders.get(1).getOrderId()).isEqualTo("2");
         assertThat(orders.get(2).getOrderId()).isEqualTo("3");
         assertThat(orders.get(3).getOrderId()).isEqualTo("4");
-//        assertThat(orders.get(4).getOrderId()).isEqualTo("5");
-//        assertThat(orders.get(5).getOrderId()).isEqualTo("6");
-//        assertThat(orders.get(6).getOrderId()).isEqualTo("7");
-//        assertThat(orders.get(7).getOrderId()).isEqualTo("8");
 
     }
 

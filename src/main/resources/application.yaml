@@ -1,3 +1,9 @@
 server:
   port: 8080
 
+app:
+  gateway:
+    user-service:
+        baseUrl: "https://reqres.in/api"
+    authentication-service:
+        baseUrl: https://reqres.in/api
