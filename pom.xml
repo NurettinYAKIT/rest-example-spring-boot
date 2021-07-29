@@ -25,7 +25,7 @@
         <wiremock-version>2.28.0</wiremock-version>
 
         <!-- Load Testing -->
-        <gatling.version>3.6.0</gatling.version>
+        <gatling.version>3.6.1</gatling.version>
         <gatling-maven-plugin.version>3.1.2</gatling-maven-plugin.version>
     </properties>
 
