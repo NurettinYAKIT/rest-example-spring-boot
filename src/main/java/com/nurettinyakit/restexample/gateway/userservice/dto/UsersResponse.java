@@ -17,6 +17,6 @@ public class UsersResponse {
     private Integer total;
     private Integer totalPages;
     @JsonProperty("data")
-    private List<User> data = new ArrayList<>();
+    private List<User> users = new ArrayList<>();
     private Support support;
 }
