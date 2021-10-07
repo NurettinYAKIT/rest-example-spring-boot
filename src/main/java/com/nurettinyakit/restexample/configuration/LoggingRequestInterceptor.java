@@ -1,16 +1,18 @@
 package com.nurettinyakit.restexample.configuration;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.http.client.ClientHttpResponse;
+import org.springframework.stereotype.Component;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+@Component
 public class LoggingRequestInterceptor implements ClientHttpRequestInterceptor {
 
     static final Logger log = LoggerFactory.getLogger(LoggingRequestInterceptor.class);

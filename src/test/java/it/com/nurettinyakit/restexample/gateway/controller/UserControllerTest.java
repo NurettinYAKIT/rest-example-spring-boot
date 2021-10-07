@@ -49,7 +49,7 @@ class UserControllerTest {
     void shouldRetrieveUserDetail() throws IOException {
 
         //GIVEN
-        USER_SERVER.stubFor(get(urlPathEqualTo(userServiceProperties.getUserDetails().replace("{id}", USER_ID)))
+        USER_SERVER.stubFor(get(userServiceProperties.getUserDetails().replace("{id}", USER_ID))
             .willReturn(okJson(FileUtil.readMessageFromFile("data/user-response.json"))));
 
         //WHEN

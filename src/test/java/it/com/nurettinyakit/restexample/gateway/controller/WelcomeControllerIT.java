@@ -12,6 +12,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.web.client.RestClientException;
 
 import static com.nurettinyakit.restexample.domain.ConstantsUtil.USER_ID;
+import static com.nurettinyakit.restexample.testutils.TestObjectFactory.createHeaders;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
@@ -38,12 +39,6 @@ class WelcomeControllerIT {
         }
         assertThat(response.getBody()).isEqualTo("Hello " + name);
         assertThat(response.getStatusCode()).isEqualTo(OK);
-    }
-
-    private HttpHeaders createHeaders() {
-        final HttpHeaders headers = new HttpHeaders();
-        headers.set(USER_ID, "1234");
-        return headers;
     }
 
 }

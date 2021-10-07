@@ -12,6 +12,8 @@ import org.springframework.util.MultiValueMap;
 
 import java.util.List;
 
+import static com.nurettinyakit.restexample.domain.ConstantsUtil.USER_ID;
+
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class TestObjectFactory {
 
@@ -61,6 +63,7 @@ public class TestObjectFactory {
     public static HttpHeaders createHeaders() {
         final HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.set(USER_ID, "1234");
         return headers;
     }
 }
