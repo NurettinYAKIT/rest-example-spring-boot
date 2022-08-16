@@ -21,7 +21,7 @@
         <java.version>15</java.version>
 
         <!--Dependencies-->
-        <springdoc-openapi.version>1.5.10</springdoc-openapi.version>
+        <springdoc-openapi.version>1.6.10</springdoc-openapi.version>
         <wiremock-version>2.28.0</wiremock-version>
 
         <!-- Load Testing -->
